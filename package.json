@@ -20,8 +20,8 @@
   },
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs",
+    "build:docs": "vitepress build docs",
+    "serve:docs": "vitepress serve docs",
     "build:library": "vite build",
     "analyze": "vite build --config analyze.config.js",
     "publish:library": "npm publish --access public",
