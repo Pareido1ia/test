@@ -1,0 +1,22 @@
+//Template colors
+$primary: #0F2165;
+$secondary: #BCBCBC;
+$success: #2eb85c;
+$warning: #f9b115;
+$danger: #e55353;
+$info: #3399ff;
+$light: #FCF9F8;
+$dark: #4f5d73;
+
+// Define custom colors here and add them to the custom map
+// They will be add to the bg-{color} and text-{color} class options
+// They also generate variables --{color} so they can be used for inline style where needed eg color: var(--re-red)
+$re-red: #ee3124;
+$re-lumo: #f7941e;
+$re-dc: #df1a22;
+
+$custom-colors: (
+        "re-red": $re-red,
+        "re-lumo": $re-lumo,
+        "re-dc": $re-dc,
+);

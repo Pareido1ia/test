@@ -1,0 +1,51 @@
+@import "@coreui/coreui/scss/functions";
+@import "@coreui/coreui/scss/variables";
+@import "@coreui/coreui/scss/maps";
+@import "@coreui/coreui/scss/mixins";
+@import "@coreui/coreui/scss/utilities";
+
+@import "reColors";
+
+// Add custom-color options for text-{color}
+$utilities: map-merge(
+                $utilities,
+                (
+                        "color": map-merge(
+                                        map-get($utilities, "color"),
+                                        (
+                                                values: map-merge(
+                                                                map-get(map-get($utilities, "color"), "values"),
+                                                                $custom-colors
+
+                                                ),
+                                        ),
+                        ),
+                )
+);
+
+// Add custom-color options for bg-{color}
+$utilities: map-merge(
+                $utilities,
+                (
+                        "background-color": map-merge(
+                                        map-get($utilities, "background-color"),
+                                        (
+                                                values: map-merge(
+                                                                map-get(map-get($utilities, "background-color"), "values"),
+                                                                $custom-colors
+                                                ),
+                                        ),
+                        ),
+                )
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Add custom-color options as variables --{color}
+:root {
+  @each $name, $color in $custom-colors {
+    --#{$name}: #{$color};
+  }
+}
+
+@import "@coreui/coreui/scss/utilities/api";

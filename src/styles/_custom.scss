@@ -1,0 +1,23 @@
+:root {
+  --re-card-cap-bg: #fcdcdc;
+  --cui-elevation-base-color: 100, 19, 19;
+  --cui-box-shadow: 0 0.5rem 1rem rgba(var(--cui-elevation-base-color), .1);
+  --cui-box-shadow-sm: 0 0.125rem 0.25rem rgba(var(--cui-elevation-base-color), .2);
+  --cui-box-shadow-md: 0 0.2rem 0.4rem rgba(var(--cui-elevation-base-color), .2);
+  --cui-box-shadow-lg: 0 1rem 3rem rgba(var(--cui-elevation-base-color), .2);
+  --cui-box-shadow-inset: inset 0 1px 2px rgba(var(--cui-elevation-base-color), .2);
+}
+
+// Here you can add other styles
+@import "components/toaster";
+@import "components/card";
+@import "components/forms";
+@import "components/dropdown";
+@import "components/grid";
+@import "components/sidebar";
+@import "components/appHeader";
+@import "components/appDropdown";
+
+@import "themes/reColorUtils";
+
+// Here you can add other custom styles

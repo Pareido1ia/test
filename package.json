@@ -1,0 +1,63 @@
+{
+  "name": "re-ui-library",
+  "version": "1.0.0",
+  "description": "Red Energy Vue 3 component library",
+  "repository": "",
+  "author": "Ryan",
+  "license": "MIT",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/re-ui-library.es.js",
+  "module": "./dist/re-ui-library.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/re-ui-library.es.js",
+      "require": "./dist/re-ui-library.es.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "build:library": "vite build",
+    "analyze": "vite build --config analyze.config.js",
+    "publish:library": "npm publish --access public",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@coreui/chartjs": "^3.1.2",
+    "@coreui/coreui": "^4.3.2",
+    "@coreui/coreui-pro": "^4.5.0",
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-vue": "^2.0.0",
+    "@coreui/utils": "^2.0.2",
+    "@coreui/vue-chartjs": "^2.2.0",
+    "@coreui/vue-pro": "^4.11.3",
+    "@popperjs/core": "^2.11.6",
+    "postcss": "^8.1.0",
+    "chart.js": "^3.9.1",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/compiler-sfc": "^3.2.13",
+    "core-js": "^3.8.3",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^7.14.0",
+    "prettier": "^2.3.2",
+    "rollup-plugin-visualizer": "^5.5.2",
+    "sass": "^1.77.2",
+    "vite": "^5.2.0",
+    "vitepress": "^0.21.4",
+    "vue": "^3.4.21",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
+  }
+}

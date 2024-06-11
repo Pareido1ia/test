@@ -1,0 +1,10 @@
+// grid custom
+.row + .row{
+  //Gap between multiple rows
+  @extend .mt-2;
+}
+
+.row {
+  //Default gutter between cols on multiple lines
+  @extend .gy-2;
+}
